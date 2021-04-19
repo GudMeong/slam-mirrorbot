@@ -38,7 +38,7 @@ def stats(update, context):
             f'<b>CPU:</b> {cpuUsage}%\n' \
             f'<b>RAM:</b> {memory}%\n' \
             f'<b>Disk:</b> {disk}%'
-    update.effective_message.reply_photo("https://telegra.ph/file/db03910496f06094f1f7a.jpg", stats, parse_mode=ParseMode.HTML)
+    update.effective_message.reply_photo("https://telegra.ph/file/532e893529a0cbcee6d78.jpg", stats, parse_mode=ParseMode.HTML)
 
 
 @run_async
@@ -47,7 +47,7 @@ def start(update, context):
 This bot can mirror all your links to Google drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/db03910496f06094f1f7a.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_photo("https://telegra.ph/file/532e893529a0cbcee6d78.jpg", start_string, parse_mode=ParseMode.MARKDOWN)
 
 @run_async
 def chat_list(update, context):
