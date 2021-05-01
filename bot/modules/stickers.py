@@ -447,7 +447,7 @@ def stickhelp(update, context):
 • `/remove`*:* Replay to a sticker to remove sticker from an existing pack.
 • `/stickers`*:* Find stickers for given term on combot sticker catalogue.
 '''
-    update.effective_message.reply_photo("https://telegra.ph/file/532e893529a0cbcee6d78.jpg", help_string, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text(help_string, parse_mode=ParseMode.MARKDOWN)
 
 STICKERID_HANDLER = CommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = CommandHandler("getsticker", getsticker)

@@ -43,7 +43,7 @@ def stats(update, context):
             f'<b>CPU:</b> {cpuUsage}%\n' \
             f'<b>RAM:</b> {memory}%\n' \
             f'<b>Disk:</b> {disk}%'
-    update.effective_message.reply_photo("https://telegra.ph/file/532e893529a0cbcee6d78.jpg", stats, parse_mode=ParseMode.HTML)
+    update.effective_message.reply_text(stats, parse_mode=ParseMode.HTML)
 
 
 @run_async
