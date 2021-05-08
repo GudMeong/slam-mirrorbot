@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from pyrogram import Client
 from telegraph import Telegraph
 import socket
-import faulthabdler
+import faulthandler
 faulthandler.enable()
 
 socket.setdefaulttimeout(600)
