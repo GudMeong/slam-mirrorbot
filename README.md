@@ -7,6 +7,7 @@ This is a telegram bot writen in python for mirroring files on the internet to o
 
 ## Additional Features
 - Mirroring Uptobox.com links to Google Drive (Uptobox account must be premium)
+- Get detailed info about replied media
 - Nyaa.si and Sukebei Torrent search
 - Speedtest with picture results
 - Limiting Torrent size support
@@ -16,7 +17,7 @@ This is a telegram bot writen in python for mirroring files on the internet to o
 - Shell and Executor
 - Stickers module
 
-## From Source Repos
+## From Original Repos
 - Mirroring direct download links, Torrent, and Telegram files to Google Drive
 - Mirroring Mega.nz links to google drive
 - Copy files from someone's drive to your drive (Using Autorclone)
@@ -158,27 +159,6 @@ Fork this repo then upload **token.pickle** to your forks
 
 ## Deploying on Heroku with heroku-cli and Goorm IDE
 <p><a href="https://telegra.ph/How-to-Deploy-a-Mirror-Bot-to-Heroku-with-CLI-05-06"> <img src="https://img.shields.io/badge/see%20on%20telegraph-grey?style=for-the-badge" width="190""/></a></p>
-
-## Bot commands to be set in [@BotFather](https://t.me/BotFather)
-
-```
-mirror - Start Mirroring
-tarmirror - Upload tar (zipped) file
-unzipmirror - Extract files
-clone - copy file/folder to drive
-watch - mirror YT-DL support link
-tarwatch - mirror youtube playlist link as tar
-cancel - Cancel a task
-cancelall - Cancel all tasks
-del - Delete file from Drive
-list - [query] searches files in G-Drive
-status - Get Mirror Status message
-stats - Bot Usage Stats
-help - Get Detailed Help
-speedtest - Check Speed of the host
-log - Bot Log [owner only]
-repo - Get the bot repo
-```
 
 ## Using Service Accounts for uploading to avoid user rate limit
 For Service Account to work, you must set **USE_SERVICE_ACCOUNTS=**"True" in config file or environment variables, 
