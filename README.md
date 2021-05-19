@@ -72,7 +72,7 @@ pip3 install -r requirements-cli.txt
 <details>
     <summary><b>Click here for more details</b></summary>
 
-**1. Using ElephantDB**
+**1. Using ElephantSQL**
 - Go to https://elephantsql.com/ and create account (skip this if you already have ElephantDB accounti)
 - Hit **Create New Instance**
 - Follow the further instructions in the screen
@@ -83,7 +83,7 @@ pip3 install -r requirements-cli.txt
 - Copy your database url, and fill to **DATABASE_URL** in config
 
 **2. Using Heroku PostgreSQL**
-<p><a href="https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1"> <img src="https://img.shields.io/badge/see%20on%20dev.to-grey?style=for-the-badge&logo=dev-dot-to" width="190""/></a></p>
+<p><a href="https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1"> <img src="https://img.shields.io/badge/see%20on%20dev.to-black?style=for-the-badge&logo=dev-dot-to" width="190""/></a></p>
 
 You should now be able to build your database URL. This will be:
 ```
