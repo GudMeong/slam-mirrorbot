@@ -1,7 +1,18 @@
 [![Slam](https://telegra.ph/file/db03910496f06094f1f7a.jpg)](https://youtu.be/Pk_TthHfLeE)
 
 # Slam Mirror Bot
-This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.
+![GitHub Repo stars](https://img.shields.io/github/stars/breakdowns/slam-mirrorbot?color=blue&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/breakdowns/slam-mirrorbot?color=green&style=flat)
+![GitHub issues](https://img.shields.io/github/issues/breakdowns/slam-mirrorbot)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/breakdowns/slam-mirrorbot)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/breakdowns/slam-mirrorbot)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/breakdowns/slam-mirrorbot)
+![GitHub contributors](https://img.shields.io/github/contributors/breakdowns/slam-mirrorbot?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/breakdowns/slam-mirrorbot?color=red)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/breakdowns/slam-mirrorbot)
+[![Slam Mirror Support](https://img.shields.io/badge/slam%20mirror%20bot-support%20group-blue)](https://t.me/SlamMirrorSupport)
+
+**Slam Mirror Bot** is a Telegram Bot writen in Python for mirroring files on the Internet to our beloved Google Drive.
 
 # Features supported:
 
@@ -182,7 +193,8 @@ sudo docker run mirrorbot
 
 ## Deploying on Heroku
 
-Fork this repo then upload **token.pickle** to your forks
+- Give stars and Fork this repo then upload **token.pickle** to your forks
+- Hit the **DEPLOY TO HEROKU** button and follow the further instructions in the screen
 
 **NOTE**: If you didn't upload **token.pickle**, uploading will not work.
 <p><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
@@ -225,9 +237,6 @@ For using your premium accounts in Youtube-dl, edit the netrc file according to 
 machine host login username password my_youtube_password
 ```
 Where host is the name of extractor (eg. Youtube, Twitch). Multiple accounts of different hosts can be added each separated by a new line.
-
-# Support Group
-<p><a href="https://t.me/SlamMirrorSupport"> <img src="https://img.shields.io/badge/Slam%20Mirror%20Support-black?style=for-the-badge&logo=telegram" width="230""/></a></p>
 
 # Credits
 
