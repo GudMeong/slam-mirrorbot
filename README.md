@@ -17,7 +17,6 @@
 # Features supported:
 
 ## Additional Features
-- Mirroring Uptobox.com links to Google Drive (Uptobox account must be premium)
 - Get detailed info about replied media
 - Nyaa.si and Sukebei Torrent search
 - Speedtest with picture results
@@ -27,24 +26,28 @@
 - Check Heroku dynos stats
 - Custom image support
 - Counting file/folder
-- Racaty.net support
 - Shell and Executor
 - Stickers module
-
+- Direct links supported:
+```
+Racaty, Hxfile, Anonfiles,
+Fembed (femax20 & layarkacaxxi), Onedrive (Only works for file not folder)
+```
 ## From Original Repos
 - Mirroring direct download links, Torrent, and Telegram files to Google Drive
-- Mirroring Mega.nz links to google drive
-- Copy files from someone's drive to your drive (Using Autorclone)
-- Download/upload progress, speeds and ETAs
-- Mirror all youtube-dl supported links
+- Mirroring Mega.nz links to Google Drive (If your Mega account not premium, it will limit 4-5gb/day)
+- Mirroring Uptobox.com links to Google Drive (Uptobox account must be premium)
+- Copy files from someone's Drive to your Drive (Using Autorclone)
+- Download/Upload progress, Speeds and ETAs
+- Mirror all Youtube-dl supported links
 - Docker support
 - Uploading to Team Drive
 - Index Link support
 - Service Account support
 - Delete files from Drive
 - Shortener support
-- Custom Filename (Only for url, Telegram files and Youtube-dl. Not for Mega links and Magnet/Torrents)
-- Extracting password protected files, using custom filename and download from password protected index links see these examples:
+- Custom Filename (Only for URL, Telegram files and Youtube-dl. Not for Mega links and Magnet/Torrents)
+- Extracting password protected files, using custom filename and download from password protected Index Links see these examples:
 <p><a href="https://telegra.ph/Magneto-Python-Aria---Custom-Filename-Examples-01-20"> <img src="https://img.shields.io/badge/see%20on%20telegraph-grey?style=for-the-badge" width="190""/></a></p>
 
 - Extract these filetypes and uploads to google drive
@@ -219,11 +222,13 @@ Many thanks to [AutoRClone](https://github.com/xyou365/AutoRclone) for the scrip
 **NOTE**: Using Service Accounts is only recommended while uploading to a Team Drive.
 
 ## Generate Service Accounts. [What is Service Account](https://cloud.google.com/iam/docs/service-accounts)
+<details>
+    <summary><b>Click here for more details</b></summary>
 
 Let us create only the service accounts that we need. 
 **Warning**: abuse of this feature is not the aim of this project and we do **NOT** recommend that you make a lot of projects, just one project and 100 sa allow you plenty of use, its also possible that over abuse might get your projects banned by google. 
 
-`Note: 1 Service Account can copy around 750gb a day, 1 project can make 100 Service Accounts so that's 75tb a day, for most users this should easily suffice. `
+**NOTE:** 1 Service Account can copy around 750gb a day, 1 project can make 100 Service Accounts so that's 75tb a day, for most users this should easily suffice.
 ```
 python3 gen_sa_accounts.py --quick-setup 1 --new-only
 ```
@@ -268,14 +273,16 @@ Then add emails from emails.txt to Google Group, after that add Google Group to 
 python3 gen_sa_accounts.py --download-keys project_id
 ```
 
-## Add all the service accounts to the Team Drive
+</details>
+
+## Add all the Service Accounts to the Team Drive
 - Run:
 ```
 python3 add_to_team_drive.py -d SharedTeamDriveSrcID
 ```
 
 # Youtube-dl authentication using .netrc file
-For using your premium accounts in Youtube-dl or for protected index links, edit the netrc file according to following format:
+For using your premium accounts in Youtube-dl or for protected Index Links, edit the netrc file according to following format:
 ```
 machine host login username password my_youtube_password
 ```
