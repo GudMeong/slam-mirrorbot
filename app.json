@@ -120,14 +120,6 @@
         "description": "Fill your shortener api key if you are using shortener.",
         "required": false
       },
-      "BUTTON_THREE_NAME": {
-        "description": "Extra buttons (optional).",
-        "required": false
-      },
-      "BUTTON_THREE_URL": {
-        "description": "Fill your URL if you are using extra buttons.",
-        "required": false
-      },
       "BUTTON_FOUR_NAME": {
         "description": "Extra buttons (optional).",
         "required": false
@@ -141,6 +133,14 @@
         "required": false
       },
       "BUTTON_FIVE_URL": {
+        "description": "Fill your URL if you are using extra buttons.",
+        "required": false
+      },
+      "BUTTON_SIX_NAME": {
+        "description": "Extra buttons (optional).",
+        "required": false
+      },
+      "BUTTON_SIX_URL": {
         "description": "Fill your URL if you are using extra buttons.",
         "required": false
       }
