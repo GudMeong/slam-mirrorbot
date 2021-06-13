@@ -11,7 +11,7 @@ import time
 
 from telegram import ParseMode, BotCommand
 from telegram.ext import CommandHandler
-from bot import bot, dispatcher, updater, botStartTime
+from bot import bot, dispatcher, updater, botStartTime, IGNORE_PENDING_REQUESTS
 from bot.helper.ext_utils import fs_utils
 from bot.helper.telegram_helper.bot_commands import BotCommands
 from bot.helper.telegram_helper.message_utils import *
@@ -232,8 +232,8 @@ def main():
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(stats_handler)
     dispatcher.add_handler(log_handler)
-    updater.start_polling()
-    LOGGER.info("Bot idup cok!")
+    updater.start_polling(drop_pending_updates=IGNORE_PENDING_REQUESTS)
+    LOGGER.info("Bot idup cok")
     signal.signal(signal.SIGINT, fs_utils.exit_clean_up)
 
 app.start()
