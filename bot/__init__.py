@@ -9,13 +9,10 @@ import telegram.ext as tg
 from dotenv import load_dotenv
 from pyrogram import Client
 from telegraph import Telegraph
-<<<<<<< HEAD
-=======
 
 import psycopg2
 from psycopg2 import Error
 
->>>>>>> 6df4486 (v4.7.5 (#94))
 import socket
 import faulthandler
 faulthandler.enable()
